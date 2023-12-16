@@ -11,7 +11,12 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@solana/wallet-adapter-react": "latest",
+    "@solana/wallet-adapter-base": "latest",
+    "@solana/wallet-adapter-phantom": "latest",
+    "@solana/wallet-adapter-react-ui": "latest",
+    "@solana/web3.js": "latest"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
