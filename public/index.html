@@ -10,34 +10,80 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
     <title>React App</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #000066; /* Dark blue background */
+        color: white;
+        text-align: center;
+      }
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding-top: 50px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+      }
+      .mint-status {
+        font-size: 24px;
+      }
+      .connect-btn {
+        background-color: #0044cc; /* Blue background */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 18px;
+      }
+      .options {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      .option {
+        margin: 0 20px;
+      }
+      .option img {
+        width: 200px; /* Adjust as needed */
+        height: auto;
+        margin-bottom: 20px;
+      }
+      .option p {
+        margin: 5px 0;
+        font-size: 18px;
+      }
+    </style>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <div class="container">
+      <div class="header">
+        <h1>Choose your way to mint</h1>
+      </div>
+      <button id="connect-button" class="connect-btn" >Connect</button>
+      <div class="mint-status">
+        Minted: 2356/5000
+      </div>
+      <div class="options">
+        <div class="option">
+          <img src="aurorium-icon.png" alt="Burn your Aurorium">
+          <p>Burn your Aurorium</p>
+        </div>
+        <div class="option">
+          <img src="gen-zero-icon.png" alt="Burn your Gen Zero">
+          <p>Burn your Gen Zero</p>
+        </div>
+        <div class="option">
+          <img src="classic-mint-icon.png" alt="Classic Mint">
+          <p>Classic Mint 0.1 Sol</p>
+        </div>
+      </div>
+    </div>
 </html>
