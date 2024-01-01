@@ -4,3 +4,48 @@
   padding: 2rem;
   text-align: center;
 }
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000066; /* Dark blue background */
+  color: white;
+  text-align: center;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 50px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.mint-status {
+  font-size: 24px;
+}
+.connect-btn {
+  background-color: #0044cc; /* Blue background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.options {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.option {
+  margin: 0 20px;
+}
+.option img {
+  width: 200px; /* Adjust as needed */
+  height: auto;
+  margin-bottom: 20px;
+}
+.option p {
+  margin: 5px 0;
+  font-size: 18px;
+}
