@@ -34,7 +34,10 @@ const App = () => {
       <div className="header">
         <h1>Choose your way to mint</h1>
       </div>
-    <WalletMultiButton />
+      <div className="wallet-button-container">
+      <WalletMultiButton />
+      </div>
+    
       <div className="mint-status">Minted: 2356/5000</div>
       <div className="options">
         <div className="option">
