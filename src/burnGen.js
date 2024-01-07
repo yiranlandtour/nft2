@@ -18,3 +18,10 @@ const { candyMachine } = await metaplex.candyMachines().create({
       }),
     },
   });
+
+  create(umi, {
+    // ...
+    guards: {
+      nftBurn: some({ requiredCollection: requiredCollectionNft.publicKey }),
+    },
+  });

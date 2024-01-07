@@ -27,5 +27,9 @@ const value = new Map([
 }
 
 export function isGenzero(){
-    
+        //Step 1 - Fetch existing NFT
+        console.log(`Step 1 - Fetching existing NFT`);
+        const nft = await METAPLEX.nfts().findByMint({ mintAddress: new PublicKey(MINT_ADDRESS) });
+        if (!nft || !nft.json?.image) {throw new Error("Unable to find existing nft or image uri!")}
+        console.log(`   NFT Found!`)
 }
