@@ -54,7 +54,7 @@ const App = () => {
         </div>
       </div>
     </div>
-          {/* <WalletMultiButton /> */}
+          <WalletMultiButton />
         </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>
